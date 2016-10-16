@@ -27,7 +27,7 @@ Let's discuss setup for local mode first.
 
 Working in *local mode* makes it easy to edit, test, run, and debug applications quickly. Then, running them in a cluster provides more real-world testing and finally production scalability and resiliency.
 
-We will build and run the examples and exercises using [SBT](http://www.scala-sbt.org/download.html). You'll need to install SBT, if you don't already have it installed. Follow the instructions on the [download](http://www.scala-sbt.org/download.html) page. SBT puts itself on your path. However, if you have a custom installation that isn't on your path, define the environment variable `SBT_HOME` (MacOS, Linux, or Cygwin only).
+We will build and run the examples and exercises using [SBT](http://www-sbt.org/download.html). You'll need to install SBT, if you don't already have it installed. Follow the instructions on the [download](http://www.scala-sbt.org/download.html) page. SBT puts itself on your path. However, if you have a custom installation that isn't on your path, define the environment variable `SBT_HOME` (MacOS, Linux, or Cygwin only).
 
 ### NOTE for Windows users
 
@@ -729,7 +729,7 @@ object WordCount3 {
     val out    = argz("output-path")
 ```
 
-I won't discuss the implementation of [CommandLineOptions.scala](#code/src/main/scala/sparktutorial/util/CommandLineOptions.scala) except to say that it defines some methods that create instances of an `Opt` type, one for each of the options we discussed above. The single argument given to some of the methods (e.g., `CommandLineOptions.inputPath("data/kjvdat.txt")`) specifies the default value for that option.
+I won't discuss the implementation of [CommandLineOptions.scala](https://github.com/deanwampler/spark-scala-tutorial/blob/master/src/main/scala/sparktutorial//util/CommandLineOptions.scala) except to say that it defines some methods that create instances of an `Opt` type, one for each of the options we discussed above. The single argument given to some of the methods (e.g., `CommandLineOptions.inputPath("data/kjvdat.txt")`) specifies the default value for that option.
 
 After parsing the options, we extract some of the values we need.
 
